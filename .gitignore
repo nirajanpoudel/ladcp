@@ -33,8 +33,10 @@ xmlrpc.php
 /vendor/*
 
 # Ignore 
+.csslintrc
 .editorconfig
 .eslintignore
 .eslintrc
 .gitattributes
 example.gitignore
+
