@@ -24,5 +24,6 @@ regions:
   footer_third: 'Footer third'
   footer_fourth: 'Footer fourth'
   footer_fifth: 'Footer fifth'
+  slider: 'Slider'
 settings:
   footer_message: 'All right '
