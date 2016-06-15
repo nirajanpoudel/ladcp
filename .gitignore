@@ -28,9 +28,15 @@ index.php
 install.php
 update.php
 xmlrpc.php
-/includes
-/misc
-/modules
+/core/*
 /profiles
-/scripts
-/themes
+/vendor/*
+
+# Ignore 
+.csslintrc
+.editorconfig
+.eslintignore
+.eslintrc
+.gitattributes
+example.gitignore
+
