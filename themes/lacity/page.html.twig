@@ -22,7 +22,8 @@
 	</div>
 	
 	<div class="collapse navbar-collapse js-navbar-collapse">
-		 {{ page.primary_menu }}
+		
+      {% include directory ~ '/partials/menu.html.twig' %}
       
       <ul class="nav navbar-nav navbar-right">
                 <form class="navbar-form navbar-left" role="search">
