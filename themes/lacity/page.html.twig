@@ -1,6 +1,7 @@
 <div class="container-fluid">
 	<div class="row">
-        <img style="height:auto;width:100%;" src="{{ directory }}/Lastrip.jpg">
+        <img style="height:auto;width:100%;" src="{{ base_path ~ directory }}/images/Lastrip.jpg">
+
 		<div class="col-md-12">
 		</div>
 	</div>
@@ -12,7 +13,7 @@
 			<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 					</button> 
 					<a class="navbar-brand" href="#">
-					<img style="height:auto; width:100%; margin-top:-6px;" src="{{ directory }}/images/ladcpsmall.jpg">
+					<img style="height:auto; width:100%; margin-top:-6px;" src="{{ base_path ~ directory }}/images/ladcpsmall.jpg">
 					</a>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
@@ -60,41 +61,8 @@
             <div class="row">
                         <div style="margin-top:10px;" class="col-md-12">
 						<div style="background-color:#e6f2ff; border-radius: 25px;" class="col-md-4">
-							<h2 style="padding-top:10px;" class="text-center">
-								Planning Processes
-							</h2>
-									<div class="row">
-										<div class="col-md-2">
-										</div>
-										<div class="col-md-10">
-											<ul>
-										<a href=""><li style="font-size:1.3em;">
-											Land Use Permit Process
-                                            </li></a>
-										<a href=""><li style="font-size:1.3em;">
-											Public Participation Process
-										</li></a>
-										<a href=""><li style="font-size:1.3em;">
-											Entitlement Process
-										</li></a>
-										<a href=""><li style="font-size:1.3em;">
-											Small Lot Policy Design Guidelines
-										</li></a>
-										<a href=""><li style="font-size:1.3em;">
-											Expedited Processing Section Brochure
-										</li></a>
-										<a href=""><li style="font-size:1.3em;">
-											California Environmental Quality Act (CEQA) Processes
-										</li></a>
-										<a href=""><li style="font-size:1.3em;">
-											General Plan Ammendment Initiations Memo
-										</li></a>
-										<a href=""><li style="font-size:1.3em;">
-											Community Plan Flow Chart
-										</li></a>
-									</ul>
-										</div>
-									</div>
+						{{ page.featured_bottom_first }}
+							
 								</div>
 								<div style="background-color:#c6d8ec; border-radius: 25px;" class="col-md-4">
 									<h2 style="padding-top:10px;" class="text-center">

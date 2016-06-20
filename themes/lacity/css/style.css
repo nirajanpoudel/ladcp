@@ -82,6 +82,7 @@ body{
 .dropdown-menu-large .dropdown-header {
   color: white;
   font-size: 18px;
+  font-weight: bold;
 }
 @media (max-width: 768px) {
   .dropdown-menu-large {
