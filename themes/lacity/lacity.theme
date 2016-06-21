@@ -45,5 +45,18 @@ function lacity_theme_suggestions_node_alter(array &$suggestions, array $variabl
 
 
 function lacity_form_contact_message_feedback_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id){
-	kint($form);
+	// kint($form);
+}
+
+
+//pdf file can get from this function 
+function lacity_preprocess_file_link(&$variables){
+
+	  $variables['file_name'] = file_create_url($variables['file']->uri->value);
+	 
+}
+
+function lacity_preprocess_node(&$variables){
+	// $variables['file_name'] = file_create_url($variables['file']->uri->value);
+	// kint($variables); 
 }
