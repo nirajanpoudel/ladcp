@@ -1,5 +1,5 @@
 
-{% if(content.field_image) %}
+{% if content.field_image|render %}
         
         <div class="col-md-4">
         
@@ -8,7 +8,7 @@
       
         </div>
    {% endif %}    
-    {% if(content.field_image) %}
+    {% if content.field_image|render %}
           
         <div class="col-md-8">
     {% else %}  

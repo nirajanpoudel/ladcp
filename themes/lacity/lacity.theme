@@ -58,7 +58,7 @@ function lacity_preprocess_file_link(&$variables){
 }
 
 function lacity_preprocess_node(&$variables){
-	kint($variables['content']['field_image']->entity);
+	// kint($variables['content']['field_image']->entity);
 	// file_url(content.field_image.entity.fileuri
 	// $variables['file_name'] = file_create_url($variables['file']->uri->value);
 	// kint($variables); 
