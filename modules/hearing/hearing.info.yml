@@ -1,0 +1,6 @@
+name: Hearing Module
+description: Creates a page showing "Hearing Agenda List World".
+package: Custom
+
+type: module
+core: 8.x

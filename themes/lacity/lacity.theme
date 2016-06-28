@@ -45,6 +45,7 @@ function lacity_theme_suggestions_node_alter(array &$suggestions, array $variabl
 }
 
 
+
 function lacity_form_contact_message_feedback_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id){
 	// kint($form);
 }
@@ -52,10 +53,17 @@ function lacity_form_contact_message_feedback_form_alter(&$form, \Drupal\Core\Fo
 
 //pdf file can get from this function 
 function lacity_preprocess_file_link(&$variables){
-
-	  $variables['file_name'] = file_create_url($variables['file']->uri->value);
-	 
+	if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $content_type = $node->bundle();
+    if($content_type=='document'){
+    	 $variables['file_name'] = file_create_url($variables['file']->uri->value);
+    }
+   
+   
+  } 
 }
+
+
 
 function lacity_preprocess_node(&$variables){
 	// kint($variables['content']['field_image']->entity);
@@ -64,4 +72,20 @@ function lacity_preprocess_node(&$variables){
 	// kint($variables); 
 }
 
+
+function lacity_preprocess_views_view_table(&$vars) {
+	
+}
 //node-document-form
+
+function lacity_theme_suggestions_file_link_alter(&$suggestions, $vars, $hook) {
+
+  // Get the node type.
+  // $node = \Drupal::routeMatch()->getParameter('node');
+  
+  // $type = $node->getType();
+
+  // // Create the theme hook suggestion. 
+  // $suggestions[] = 'file__link__' . 'type_' . $type;
+
+}
