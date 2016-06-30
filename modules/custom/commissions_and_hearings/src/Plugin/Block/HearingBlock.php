@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\hearing\Plugin\Block;
+namespace Drupal\commissions_and_hearings\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 
@@ -19,7 +19,7 @@ class HearingBlock extends BlockBase {
   public function build() {
     return array(
       // '#markup' => '<ul class="nav"><li><a href="">'.\Drupal::request()->query->get('q').'</a></li></ul>',
-    	'#theme'=>'hearing',
+    	'#theme'=>'commissions_and_hearings',
     	 '#description' => 'My description',
     	 '#var1'=>$this->stringToArray(\Drupal::service('path.current')->getPath())
     );
@@ -29,5 +29,6 @@ class HearingBlock extends BlockBase {
   	$data = explode("/", $data);
   	return $data[2];
   }
+  
 }
 ?>

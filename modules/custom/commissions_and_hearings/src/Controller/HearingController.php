@@ -4,7 +4,7 @@
  * Contains \Drupal\hello_world\Controller\HelloController.
  */
 
-namespace Drupal\hearing\Controller;
+namespace Drupal\commissions_and_hearings\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 
